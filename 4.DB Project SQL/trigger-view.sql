@@ -25,6 +25,8 @@ FROM Audio a
 JOIN Singers s ON a.Audio_id = s.Audio_id
 GROUP BY SingersName, AudioName;
 Go 
+Select * From MostStreamedAudioBySinger;
+Go 
 CREATE OR ALTER VIEW LatestReleasedAudioBySinger AS
 SELECT SingersName, AudioName, TheDateOfRelease AS ReleaseDate
 FROM Audio a
